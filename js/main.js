@@ -1,23 +1,36 @@
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    // direction: 'vertical',
-    loop: true,
+	// Optional parameters
+	// direction: 'vertical',
+	loop: true,
 
-    // If we need pagination
-    /*    pagination: {
-            el: '.swiper-pagination',
-        },*/
+	autoplay: {
+		delay: 3000,
+	},
 
-    // Navigation arrows
-    navigation: {
-        nextEl: '.slider-button--next',
-        prevEl: '.slider-button--prev',
-    },
+	keyboard: {
+		enabled: true,
+		// onlyInViewport: false,
+	},
 
-    effect: 'cube',
+	// If we need pagination
+	pagination: {
+		el: '.swiper-pagination',
+		type: 'bullets',
+		clickable: 'true'
+	},
 
-    // And if we need scrollbar
-    /*scrollbar: {
-        el: '.swiper-scrollbar',
-    },*/
+	// Navigation arrows
+	navigation: {
+		nextEl: '.slider-button--next',
+		prevEl: '.slider-button--prev',
+	},
+
+	effect: 'cube',
+	// direction: 'vertical',
+	speed: 500,
+
+	// And if we need scrollbar
+	/*scrollbar: {
+			el: '.swiper-scrollbar',
+	},*/
 });

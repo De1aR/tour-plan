@@ -32,30 +32,30 @@
 		font-size: 12px
 		line-height: 15px
 
-	//&-grid
-	//	display: flex
+//&-grid
+//	display: flex
 
-	.rating
-		max-width: 65px
-		min-height: 45px
-		text-align: center
-		background-color: $button-color
-		color: $light-text
-		border-radius: 4px
+.rating
+	max-width: 65px
+	min-height: 45px
+	text-align: center
+	background-color: $button-color
+	color: $light-text
+	border-radius: 4px
 
-		&__name
-			font-size: 8px
-			line-height: 10px
+	&__name
+		font-size: 8px
+		line-height: 10px
 
-		&__counter
-			font-size: 14px
-			line-height: 18px
-			font-weight: bold
+	&__counter
+		font-size: 14px
+		line-height: 18px
+		font-weight: bold
 
-		&__counter-max
-			font-size: 10px
-			line-height: 13px
-			font-weight: bold
+	&__counter-max
+		font-size: 10px
+		line-height: 13px
+		font-weight: bold
 
 .stars
 	flex-basis: 100%
@@ -82,7 +82,7 @@
 		cursor: pointer
 		background-repeat: no-repeat
 		background-position: center
-		background-size: 10px
+		background-size: 20px
 		background-color: transparent
 
 		&--next
@@ -101,6 +101,16 @@
 	-moz-border-radius: 8px
 	border-radius: 8px
 
+	&-wrapper, &-slide
+		width: 100%
+		height: 100%
+
+	&-slide
+		img
+			width: inherit
+			height: inherit
+			object-fit: cover
+
 	&:after
 		content: ''
 		position: absolute
@@ -109,4 +119,4 @@
 		top: 0
 		left: 0
 		background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
-		z-index: 9
+		z-index: 7

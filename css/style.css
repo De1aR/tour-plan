@@ -497,7 +497,8 @@ template {
   font-size: 12px;
   line-height: 15px;
 }
-.hotel .rating {
+
+.rating {
   max-width: 65px;
   min-height: 45px;
   text-align: center;
@@ -505,16 +506,16 @@ template {
   color: #fff;
   border-radius: 4px;
 }
-.hotel .rating__name {
+.rating__name {
   font-size: 8px;
   line-height: 10px;
 }
-.hotel .rating__counter {
+.rating__counter {
   font-size: 14px;
   line-height: 18px;
   font-weight: bold;
 }
-.hotel .rating__counter-max {
+.rating__counter-max {
   font-size: 10px;
   line-height: 13px;
   font-weight: bold;
@@ -547,7 +548,7 @@ template {
   cursor: pointer;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 10px;
+  background-size: 20px;
   background-color: transparent;
 }
 .slider-button--next {
@@ -567,6 +568,15 @@ template {
   -moz-border-radius: 8px;
   border-radius: 8px;
 }
+.swiper-wrapper, .swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide img {
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
 .swiper:after {
   content: "";
   position: absolute;
@@ -575,7 +585,7 @@ template {
   top: 0;
   left: 0;
   background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%);
-  z-index: 9;
+  z-index: 7;
 }
 
 @media (max-width: 1200px) {
