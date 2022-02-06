@@ -3,9 +3,11 @@ const swiper = new Swiper('.swiper', {
 	// direction: 'vertical',
 	loop: true,
 
-	autoplay: {
-		delay: 3000,
-	},
+	/*
+		autoplay: {
+			delay: 3000,
+		},
+	*/
 
 	keyboard: {
 		enabled: true,
