@@ -1,10 +1,11 @@
 .newsletter
 	padding: 98px 0 87px 0
 	position: relative
-	background-image: url(../img/newsletter-bg.jfif)
-	background-repeat: no-repeat
-	background-size: cover
-	background-position: center
+	//background-image: url(../img/newsletter-bg.jfif)
+	//background-repeat: no-repeat
+	//background-size: cover
+	//background-position: center
+	//background-attachment: fixed
 
 	&:before
 		content: ''
@@ -41,7 +42,7 @@
 .subscribe
 	position: relative
 	width: 350px
-	height: 55px
+	min-height: 55px
 	border-radius: 4px
 	overflow: hidden
 
@@ -58,3 +59,4 @@
 
 	&__button
 		@extend .search__button
+		padding: 5px
