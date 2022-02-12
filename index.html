@@ -79,12 +79,14 @@
 			<div class="hotel-info">
 				<div class="hotel-info__left">
 					<div class="hotel-wrapper">
-						<div class="stars">
-							<img src="img/star.svg" alt="star">
-							<img src="img/star.svg" alt="star">
-							<img src="img/star.svg" alt="star">
-							<img src="img/star.svg" alt="star">
-							<img src="img/star.svg" alt="star">
+						<div class="hotel__stars-rating">
+							<div class="stars-rating">
+								<img src="img/star.svg" alt="star">
+								<img src="img/star.svg" alt="star">
+								<img src="img/star.svg" alt="star">
+								<img src="img/star.svg" alt="star">
+								<img src="img/star.svg" alt="star">
+							</div>
 						</div>
 						<h1 class="hotel-name hotel-info__name">grand hilton hotel</h1>
 						<span class="button offer hotel-info__offer">Flash Offer</span>
@@ -103,30 +105,27 @@
 			<!-- /.hotel-info -->
 
 			<div class="hotel-grid">
-				<div class="slider hotel__slider">
-					<!-- Slider main container -->
-					<div class="swiper">
-						<!-- Additional required wrapper -->
-						<div class="swiper-wrapper">
-							<!-- Slides -->
-							<div class="swiper-slide">
-								<img class="swiper-slide__img" src="img/slide-1.jpg" alt="slide">
-							</div>
-							<div class="swiper-slide">
-								<img class="swiper-slide__img" src="img/slide-2.jpg" alt="slide">
-							</div>
-							<div class="swiper-slide">
-								<img class="swiper-slide__img" src="img/slide-3.jpg" alt="slide">
-							</div>
+				<!-- Slider main container -->
+				<div class="swiper hotel-slider hotel__slider">
+					<!-- Additional required wrapper -->
+					<div class="swiper-wrapper hotel-slider-wrapper">
+						<!-- Slides -->
+						<div class="swiper-slide hotel-slider__item">
+							<img class="hotel-slider__img" src="img/slide-1.jpg" alt="slide">
 						</div>
-						<!-- If we need pagination -->
-						<div class="swiper-pagination"></div>
-						<!-- If we need navigation buttons -->
-						<button class="slider-button slider-button--prev"></button>
-						<button class="slider-button slider-button--next"></button>
+						<div class="swiper-slide hotel-slider__item">
+							<img class="hotel-slider__img" src="img/slide-2.jpg" alt="slide">
+						</div>
+						<div class="swiper-slide hotel-slider__item">
+							<img class="hotel-slider__img" src="img/slide-3.jpg" alt="slide">
+						</div>
 					</div>
+					<!-- If we need pagination -->
+					<div class="swiper-pagination"></div>
+					<!-- If we need navigation buttons -->
+					<button class="slider-button hotel-slider__button--prev"></button>
+					<button class="slider-button hotel-slider__button--next"></button>
 				</div>
-				<!-- /.slider -->
 
 				<div class="hotel-right">
 					<div class="booking">
@@ -196,6 +195,100 @@
 		<!-- /.newsletter-wrapper -->
 	</section>
 	<!-- /.newsletter	-->
+
+	<section class="reviews">
+		<div class="container">
+			<h2 class="reviews__title">What people think about us</h2>
+
+			<!-- Slider main container -->
+			<div class="swiper reviews-slider">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide">
+						<div class="reviews-slider__item">
+							<div class="reviews-slider__profile">
+								<img src="img/reviews-avatar-v-serd.jpg" alt="Photo: Verka Serduchka" class="reviews-slider__avatar">
+								<h3 class="reviews-slider__username">Verka Serduchka</h3>
+								<span class="reviews-slider__date-visit">Stayed 18 Nov, 2019</span>
+								<div class="stars-rating">
+									<img src="img/star.svg" alt="star">
+									<img src="img/star.svg" alt="star">
+									<img src="img/star.svg" alt="star">
+									<img src="img/star.svg" alt="star">
+									<img src="img/star.svg" alt="star">
+								</div>
+							</div>
+
+							<p class="reviews-slider__text">It was very nice hotel with cleanliness. Staff behavior was good and polite. They welcome us very well. Issue was only that Lift was
+								not in working and we were allotted to 3rd floor and amenities articles were in corner of gallery which were giving bad feeling. Breakfast was good and support of
+								the staff was also very nice. Location is not good as per atmosphere, it is very nearby most of the popular places but self location in a narrow street is not good.
+								Overall it was a good experience and could recommend.</p>
+						</div>
+						<!-- /.reviews-slider__item -->
+					</div>
+					<!-- /.swiper-slide -->
+
+					<div class="swiper-slide">
+						<div class="reviews-slider__item">
+							<div class="reviews-slider__profile">
+								<img src="img/reviews-avatar-j-hetfield.jpg" alt="Photo: James Hetfield" class="reviews-slider__avatar">
+								<h3 class="reviews-slider__username">James Hetfield</h3>
+								<span class="reviews-slider__date-visit">Stayed 3 Aug, 2021</span>
+								<div class="stars-rating">
+									<img src="img/star.svg" alt="star">
+									<img src="img/star.svg" alt="star">
+									<img src="img/star.svg" alt="star">
+									<img src="img/star.svg" alt="star">
+									<img src="img/star.svg" alt="star">
+								</div>
+							</div>
+
+							<p class="reviews-slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam asperiores assumenda blanditiis delectus deleniti doloremque
+								ducimus enim error esse explicabo fuga incidunt, inventore ipsum laborum minus mollitia numquam optio perferendis quod quos reiciendis sapiente soluta suscipit vel
+								vitae voluptatem. Alias aliquid amet aspernatur at autem blanditiis consequuntur dignissimos distinctio dolor doloribus ea esse expedita harum illo incidunt iste
+								iusto laborum libero magnam magni minus necessitatibus.</p>
+						</div>
+						<!-- /.reviews-slider__item -->
+					</div>
+					<!-- /.swiper-slide -->
+
+					<div class="swiper-slide">
+						<div class="reviews-slider__item">
+							<div class="reviews-slider__profile">
+								<img src="img/reviews-avatar-j-davis.jpg" alt="Photo: Jonathan Davis" class="reviews-slider__avatar">
+								<h3 class="reviews-slider__username">Jonathan Davis</h3>
+								<span class="reviews-slider__date-visit">Stayed 18 Jan, 2022</span>
+								<div class="stars-rating">
+									<img src="img/star.svg" alt="star">
+									<img src="img/star.svg" alt="star">
+									<img src="img/star.svg" alt="star">
+									<img src="img/star.svg" alt="star">
+									<img src="img/star.svg" alt="star">
+								</div>
+							</div>
+
+							<p class="reviews-slider__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam aperiam asperiores assumenda blanditiis delectus deleniti doloremque
+								ducimus enim error esse explicabo fuga incidunt, inventore ipsum laborum minus mollitia numquam optio perferendis quod quos reiciendis sapiente soluta suscipit vel
+								vitae voluptatem. Alias aliquid amet aspernatur at autem blanditiis consequuntur dignissimos distinctio dolor doloribus ea esse expedita harum.</p>
+						</div>
+						<!-- /.reviews-slider__item -->
+					</div>
+					<!-- /.swiper-slide -->
+				</div>
+				<!-- /.swiper-wrapper -->
+
+				<!-- pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- navigation buttons -->
+				<button class="reviews-slider__button reviews-slider__button--prev"></button>
+				<button class="reviews-slider__button reviews-slider__button--next"></button>
+			</div>
+			<!-- /.reviews-slider	-->
+		</div>
+		<!-- /.container -->
+	</section>
+	<!-- /.reviews -->
 
 	<script src="js/swiper-bundle.min.js"></script>
 	<script src="js/main.js"></script>
